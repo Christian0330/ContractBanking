@@ -23,12 +23,12 @@ Prerequisites:
     Solidity 0.8.28 or a compatible version
     Access to Remix IDE (https://remix.ethereum.org)
 
-Executing the Program
+## Executing the Program
 
     Open Remix IDE.
     Create a new file: Click the "+" icon in the left sidebar and name it ContractBanking.sol.
     Copy and paste the following contract code into the file:
-
+```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
@@ -68,8 +68,8 @@ contract ContractBanking {
         withdrawalsToday[msg.sender] = 0;
     }
 }
-
-Compiling and Deploying the Contract
+```
+## Compiling and Deploying the Contract
 
     Compile the Contract:
         Click on the Solidity Compiler tab in Remix.
@@ -83,7 +83,7 @@ Compiling and Deploying the Contract
 
     Once the contract is deployed, it will appear under Deployed Contracts on the Remix interface.
 
-Interacting with the Contract
+## Interacting with the Contract
 
 After deployment, you can interact with the contract using the following functions:
 
@@ -98,9 +98,9 @@ After deployment, you can interact with the contract using the following functio
     resetDailyWithdrawals:
         To reset the daily withdrawal count, click "resetDailyWithdrawals."
 
-Authors
+## Authors
 
 Metacrafter Chris_Narumi.
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE.md file for details.
